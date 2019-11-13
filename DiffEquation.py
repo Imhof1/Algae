@@ -41,8 +41,8 @@ def f(t,w):
                 wn+1=[u1(n+1),u2(n+1),...,un(n+1)]^T'''
     
     ## this is the linear part of the differential equation
-    ## Little is linair so this matrix A is moslty filled with 0
-    ## the dimentions of A are 2x2
+    ## Little is linear so this matrix A is moslty filled with 0
+    ## the dimensions of A are 2x2
     ## The first value is P and the second H
     ##
     ##       | P |
@@ -74,7 +74,7 @@ def f(t,w):
 
 
 
-## ----------------Non linear funcitons-------------------
+## ----------------Non linear functions-------------------
 def alpha(t,w):
     ans=(0.04+0.03*np.cos(2*np.pi/365.25*t))*w[0,-1]
     ans=np.array([

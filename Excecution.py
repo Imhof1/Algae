@@ -15,7 +15,7 @@ from NumericalSolvers import RK,EF,TZ
 print('------ begin of code ------')
 
 
-## boundry conditions
+## boundary conditions
 
 # time starting point  
 t0=0
@@ -27,7 +27,7 @@ tE=365
 dt=0.1
 
 
-# inital conditions
+# initial conditions
 
 #creating the initial w matrix
 
@@ -49,7 +49,7 @@ Time=[t0]
 ##----------- The excecution --------------
 while(Time[-1]<tE):
     
-    #appling the numerical method over the differnential eqation f.
+    #applying the numerical method over the differential equation f.
     
     wn=RK(Time,w,dt)
     
